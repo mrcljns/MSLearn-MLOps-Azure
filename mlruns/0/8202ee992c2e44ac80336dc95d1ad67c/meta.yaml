@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/8202ee992c2e44ac80336dc95d1ad67c/artifacts
+end_time: 1694871633045
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8202ee992c2e44ac80336dc95d1ad67c
+run_name: handsome-crow-489
+run_uuid: 8202ee992c2e44ac80336dc95d1ad67c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694871631106
+status: 4
+tags: []
+user_id: maciej

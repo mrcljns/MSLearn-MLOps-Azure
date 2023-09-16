@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/d745b149765b49d9a1ed342210efccef/artifacts
+end_time: 1694873413339
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d745b149765b49d9a1ed342210efccef
+run_name: unequaled-loon-725
+run_uuid: d745b149765b49d9a1ed342210efccef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694873411829
+status: 4
+tags: []
+user_id: maciej

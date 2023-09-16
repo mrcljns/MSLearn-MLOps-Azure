@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/856732684eed440e8007aadf0fdbc4d2/artifacts
+end_time: 1694873283736
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 856732684eed440e8007aadf0fdbc4d2
+run_name: silent-mink-258
+run_uuid: 856732684eed440e8007aadf0fdbc4d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694873282242
+status: 4
+tags: []
+user_id: maciej

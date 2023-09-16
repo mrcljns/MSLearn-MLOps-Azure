@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/ca6683e6edb344d0b914469d9f8fb256/artifacts
+end_time: 1694875356777
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ca6683e6edb344d0b914469d9f8fb256
+run_name: useful-conch-676
+run_uuid: ca6683e6edb344d0b914469d9f8fb256
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694875354587
+status: 4
+tags: []
+user_id: maciej

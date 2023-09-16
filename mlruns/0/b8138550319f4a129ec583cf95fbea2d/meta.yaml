@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/b8138550319f4a129ec583cf95fbea2d/artifacts
+end_time: 1694874956893
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b8138550319f4a129ec583cf95fbea2d
+run_name: overjoyed-worm-112
+run_uuid: b8138550319f4a129ec583cf95fbea2d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694874954527
+status: 4
+tags: []
+user_id: maciej

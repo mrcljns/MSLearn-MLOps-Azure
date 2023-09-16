@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/26c958431efc43918e734c9b3def21dd/artifacts
+end_time: 1694875609054
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 26c958431efc43918e734c9b3def21dd
+run_name: able-stoat-689
+run_uuid: 26c958431efc43918e734c9b3def21dd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694875606702
+status: 4
+tags: []
+user_id: maciej

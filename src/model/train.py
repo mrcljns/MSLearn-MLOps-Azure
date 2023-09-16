@@ -15,7 +15,9 @@ import mlflow
 # define functions
 def main(args):
     # TO DO: enable autologging
-
+    tracking_uri = mlflow.get_tracking_uri()
+    print(f"Current tracking uri: {tracking_uri}")
+    mlflow.sklearn.autolog()
 
     # read data
     df = get_csvs_df(args.training_data)
@@ -24,7 +26,7 @@ def main(args):
     X_train, X_test, y_train, y_test = split_data(df)
 
     # train model
-    train_model(args.reg_rate, X_train, X_test, y_train, y_test)
+    train_model(args.reg_rate, X_train, y_train)
 
 
 def get_csvs_df(path):
@@ -37,13 +39,11 @@ def get_csvs_df(path):
 
 
 # TO DO: add function to split data
-def split_data(df):
-    return train_test_split(df.drop(columns=['Diabetic']).values, df['Diabetic'].values, test_size=0.3, random_state=0)
+def split_data(df, test_size=0.3):
+    return train_test_split(df.drop(columns=['Diabetic']).values, df['Diabetic'].values, random_state=0)
 
 
-def train_model(reg_rate, X_train, X_test, y_train, y_test):
-
-    mlflow.autolog()
+def train_model(reg_rate, X_train, y_train):
     # train model
     LogisticRegression(C=1/reg_rate, solver="liblinear").fit(X_train, y_train)
 

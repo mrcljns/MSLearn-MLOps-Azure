@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/4fd95d776a5b437cbf453928967564cf/artifacts
+end_time: 1694872968042
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4fd95d776a5b437cbf453928967564cf
+run_name: adorable-loon-174
+run_uuid: 4fd95d776a5b437cbf453928967564cf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694872966500
+status: 4
+tags: []
+user_id: maciej

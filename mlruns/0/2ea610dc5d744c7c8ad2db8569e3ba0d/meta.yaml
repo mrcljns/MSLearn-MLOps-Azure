@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/2ea610dc5d744c7c8ad2db8569e3ba0d/artifacts
+end_time: 1694873441013
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2ea610dc5d744c7c8ad2db8569e3ba0d
+run_name: amusing-robin-593
+run_uuid: 2ea610dc5d744c7c8ad2db8569e3ba0d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694873439490
+status: 4
+tags: []
+user_id: maciej

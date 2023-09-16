@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/4bbfbdb1b8ae4ebcac1212b9a86d5fea/artifacts
+end_time: 1694873731270
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4bbfbdb1b8ae4ebcac1212b9a86d5fea
+run_name: able-cod-798
+run_uuid: 4bbfbdb1b8ae4ebcac1212b9a86d5fea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1694873729790
+status: 4
+tags: []
+user_id: maciej
