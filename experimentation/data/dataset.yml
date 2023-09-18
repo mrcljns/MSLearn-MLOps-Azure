@@ -10,4 +10,4 @@ type: uri_folder
 name: diabetes-dev-folder
 version: 1
 description: Folder with the diabetes.csv file
-path: experimentation/data
+path: ./data/
