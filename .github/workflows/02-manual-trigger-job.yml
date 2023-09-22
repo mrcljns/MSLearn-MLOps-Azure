@@ -4,6 +4,10 @@ on:
   workflow_dispatch:
   pull_request:
       branches: [ main ]
+
+env:
+  workspace-name: ms-learning-path-ws
+  resource-group: macieklorens-rg
       
 permissions:
   id-token: write
@@ -22,6 +26,6 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - name: Run job
-      run: az ml job create --file src/job.yml --workspace-name ms-learning-path-ws --resource-group macieklorens-rg
+      run: az ml job create --file src/job.yml --workspace-name ${{ env.workspace-name }} --resource-group ${{ env.resource-group }}
 
 
