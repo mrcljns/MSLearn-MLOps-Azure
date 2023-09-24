@@ -40,7 +40,8 @@ def get_csvs_df(path):
 
 # TO DO: add function to split data
 def split_data(df, test_size=0.3):
-    return train_test_split(df.drop(columns=['Diabetic']).values, df['Diabetic'].values, test_size=test_size, random_state=0)
+    return train_test_split(df.drop(columns=['Diabetic']).values, \
+                            df['Diabetic'].values, test_size=test_size, random_state=0)
 
 
 def train_model(reg_rate, X_train, y_train):
