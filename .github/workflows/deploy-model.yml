@@ -1,9 +1,8 @@
 name: Deploy registered model
 
 on:
-  workflow_dispatch:
-  pull_request:
-      branches: [main]
+  pull_request_target:
+      types: [labeled]
 
 env:
   workspace-name: ms-learning-path-ws
@@ -16,6 +15,7 @@ permissions:
 jobs:
   create-endpoint:
     name: Create an endpoint
+    if: github.event.label.name == 'create-endpoint'
     runs-on: ubuntu-latest
     environment: Production
     steps:
@@ -29,9 +29,9 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - name: Run job
       run: az ml online-endpoint create --file src/endpoint.yml --workspace-name ${{ env.workspace-name }} --resource-group ${{ env.resource-group }}
-
   deploy-model:
     name: Deploy registered model
+    if: github.event.label.name == 'deploy-model'
     runs-on: ubuntu-latest
     environment: Production
     steps:
