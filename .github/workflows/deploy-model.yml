@@ -1,0 +1,48 @@
+name: Deploy registered model
+
+on:
+  pull_request_target:
+      types: [labeled]
+
+env:
+  workspace-name: ms-learning-path-ws
+  resource-group: macieklorens-rg
+      
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  create-endpoint:
+    name: Create an endpoint
+    if: github.event.label.name == 'create-endpoint'
+    runs-on: ubuntu-latest
+    environment: Production
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@main
+    - name: Install az ml extension
+      run: az extension add -n ml -y
+    - name: Azure login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - name: Run job
+      run: az ml online-endpoint create --file src/endpoint.yml --workspace-name ${{ env.workspace-name }} --resource-group ${{ env.resource-group }}
+  deploy-model:
+    name: Deploy registered model
+    if: github.event.label.name == 'deploy-model'
+    runs-on: ubuntu-latest
+    environment: Production
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@main
+    - name: Install az ml extension
+      run: az extension add -n ml -y
+    - name: Azure login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - name: Run job
+      run: az ml online-deployment create --file src/deployment.yml --workspace-name ${{ env.workspace-name }} --resource-group ${{ env.resource-group }}
+    
