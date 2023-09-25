@@ -1,4 +1,4 @@
-name: Deploy registered model
+name: Deploy a model
 
 on:
   workflow_dispatch:
